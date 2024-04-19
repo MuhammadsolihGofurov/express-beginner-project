@@ -4,6 +4,14 @@
 @tailwind utilities;
 
 /* Your custom styles */
-h1 {
-  color: red;
+.container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 1540px) {
+  .container {
+    padding: 0;
+  }
 }
