@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 // Define a route to get a specific user by ID
-app.get("/:id", (req, res) => {
+app.get("/user/:id", (req, res) => {
   const id = parseInt(req.params.id); // Parse the ID parameter from the URL
   const user = users.find((user) => user.id === id); // Find the user with the specified ID
   if (!user) {
