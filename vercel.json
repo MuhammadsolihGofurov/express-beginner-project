@@ -4,5 +4,6 @@
   "routes": [
     { "src": "/", "dest": "./index.js" },
     { "src": "/about", "dest": "./index.js" }
-  ]
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
