@@ -9,6 +9,9 @@ app.set("view engine", "pug");
 app.get("/", (req, res) => {
   res.render("home");
 });
+app.get("/about", (req, res) => {
+  res.render("about");
+});
 
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
