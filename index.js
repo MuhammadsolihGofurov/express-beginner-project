@@ -13,9 +13,10 @@ const __dirname = dirname(__filename)
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
+app.use(express.static('public'))
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home" , {title: "Home page"});
 });
 // Routes
 app.use("/pages", pages);

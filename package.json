@@ -8,7 +8,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "devDependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
